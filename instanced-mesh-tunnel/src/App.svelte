@@ -35,6 +35,8 @@
 
 <style>
   span {
+    font-family:monospace;
+    font-size:12px;
     position:relative;
     display:block;
     color:white;
