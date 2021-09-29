@@ -13,7 +13,13 @@
 			<Three.Mesh>
 				<Three.SphereGeometry args=.1 />
 				<Three.MeshBasicMaterial />
+        
 			</Three.Mesh>
+      <Three.Group position-x={.2}>
+        <ThreeDom pointerEvents={false}>
+          <span>I Am The Light</span>
+        </ThreeDom>
+      </Three.Group>
 		</Three.PointLight>
 
 		<InstancedMesh count={instances.length} useEvents on:pointermove={handlePointerMove} onTick={loop}>
@@ -27,10 +33,18 @@
 	</Three.Scene>
 </Three.WebGLRenderer>
 
+<style>
+  span {
+    position:relative;
+    display:block;
+    color:white;
+    transform:translateY(-50%);
+  }
+</style>
 
 <script>
   
-  import { Three } from './svelte-three/index'
+  import { Three, ThreeDom } from './svelte-three/index'
   import * as THREE from 'three'
   
   import InstancedMesh from './components/InstancedMesh.svelte'
