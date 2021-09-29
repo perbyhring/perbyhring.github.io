@@ -15,7 +15,7 @@
 				<Three.MeshBasicMaterial />
         
 			</Three.Mesh>
-      <Three.Group position-x={.2}>
+      <Three.Group position-x={.3}>
         <ThreeDom pointerEvents={false}>
           <span>I Am The Light</span>
         </ThreeDom>
@@ -36,7 +36,7 @@
 <style>
   span {
     font-family:monospace;
-    font-size:12px;
+    font-size:10px;
     position:relative;
     display:block;
     color:white;
