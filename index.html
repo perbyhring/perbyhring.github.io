@@ -5,10 +5,62 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>perbyhring.github.io</title>
+  <style>
+    body {
+      font-family:monospace;
+      line-height:1.6;
+      display:grid;
+      justify-items:center;
+    }
+    main {
+      max-width:800px;
+    }
+    li {
+      margin-bottom:2ex;
+    }
+    a {
+      background:rgb(255, 225, 0);
+      color:#000!important;
+    }
+    footer {
+      margin-top:5ex;
+      padding-top:2ex;
+      border-top:1px solid #ddd;
+    }
+  </style>
 </head>
 <body>
   
-  <h1>perbyhring.github.io</h1>
+  <main>
+  
+    <header>
+      <h1>perbyhring.github.io</h1>
+    </header>
+
+    <article>
+      <p>My name is Per Byhring. This is a page where I publish some things I make.</p>
+      
+      <ul>
+        <li>
+          <strong><a href="https://perbyhring.github.io/slug/public/">Slugs // Ημίθεος γυμνοσάλιαγκας</a></strong><br>
+          This scene is inspired by a poem about slugs (but not really).
+          The three.js scene is made up of one PlaneGeometry and one CylinderGeometry – no lights or out of the box materials. Everything is modeled and painted with GLSL vertex and fragment shaders.
+        </li>
+        <li>
+          <strong><a href="https://perbyhring.github.io/instanced-mesh-tunnel/public/">Instanced Mesh Tunnel</a></strong><br>
+          A tiny interactive experiments where I wanted to try out how to write InstancedMesh-instances declaratively with my svelte/three-library.
+        </li>
+      </ul>
+    </article>
+
+    <footer>
+      <strong>Find me:</strong>
+      <a href="https://twitter.com/perbyhring">@twitter</a> | 
+      <a href="https://soundcloud.com/perbyhring">@soundcloud</a> | 
+      <a href="https://github.com/perbyhring">@github</a>
+    </footer>
+
+  </main>
   
 </body>
 </html>
