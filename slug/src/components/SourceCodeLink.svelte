@@ -1,4 +1,4 @@
-<a href="https://github.com/perbyhring">View Source</a>
+<a href="https://github.com/perbyhring/perbyhring.github.io/blob/main/slug/src/App.svelte">View Source</a>
 
 <style>
 
