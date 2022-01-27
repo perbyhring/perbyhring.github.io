@@ -65,7 +65,7 @@ export default {
 
 		alias({
       entries: [
-        { find: 'svelte-three', replacement: '../svelte-three-wip/src/index.js' }
+        { find: 'svelte-three', replacement: '../svelte-three/src/index.js' }
       ]
     }),
 
