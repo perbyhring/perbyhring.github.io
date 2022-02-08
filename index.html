@@ -27,13 +27,51 @@
       color:inherit!important;
     }
     time {
+      font-size:12px;
+      font-weight:400;
       display:inline-block;
       color:#999;
+    }
+    details[open] {
+      margin-bottom:16px;
+    }
+    summary {
+      font-weight:700;
+      cursor:pointer;
+    }
+    img {
+      width:100%;
+    }
+    video {
+      width:100%;
     }
     footer {
       margin-top:5ex;
       padding-top:2ex;
       border-top:1px solid #ddd;
+    }
+
+    .waving-hand {
+      position:relative;
+      display:inline-block;
+      animation: waving-hand 3s infinite;
+      transform-origin:70% 70%;
+    }
+    @media (prefers-reduced-motion) {
+      .waving-hand {
+        animation:none;
+      }
+    }
+    @keyframes waving-hand {
+      0%, 5%, 10%, 15%, 100% {
+        transform:rotate(-5deg);
+      }
+      2.5%, 7.5%, 12.5%, 20% {
+        transform:rotate(5deg);
+      }
+      25%, 97.5% {
+        transform:rotate(0deg);
+      }
     }
 
     @media (prefers-color-scheme: dark) {
@@ -55,12 +93,20 @@
   <main>
   
     <header>
-      <h1>Hello.</h1>
+      <h1>Hello <span class="waving-hand">👋</span></h1>
     </header>
 
     <article>
       <p>My name is Per Byhring. This is a page where I publish some things I make for fun.</p>
+
+      <h2>Content ↴</h2>
+      <ul>
+        <li><a href="#three-js">#Shaders and real-time 3D</a></li>
+        <li><a href="#blender">#Blender Fun</a></li>
+      </ul>
       
+      <h2 id="#three-js">Shaders and real-time 3D</h2>
+
       <ul>
         <li>
           <strong><a href="https://perbyhring.github.io/slug/public/">Slugs // Ημίθεος γυμνοσάλιαγκας</a></strong>
@@ -84,13 +130,32 @@
           This was my first go at creating something from scratch after having finished Bruno Simons great chapter on shaders in his <a class="external" href="https://threejs-journey.xyz">Three.js Journey</a>-course. I set out to sculpt a SphereGeometry into a cartoon cloud in the vertex shader. It ended up looking more like a jellyfish, so I doubled down on that.
         </li>
       </ul>
+
+
+      <h2>Blender Fun</h2>
+
+      
+      <h3>Pathway To Somewhere / Unsuspected Company <time datetime="2022-02-07 00:00">2022.02.07</time></h3>
+      <p>I spent a couple of hours organizing all my asset packs into the new Asset Browser in Blender 3.0. Which felt like, but really wasn't, a dumb thing to do. I found it to improve my work flow immensely. These two images was created from throwing assets together and going "hummm.. haaah.. yes... no.. hummm.. yes" until I liked what I was seeing.</p>
+
+      <details>
+        <summary>Pathway To Somewhere</summary>
+        <img src="https://perbyhring.github.io/blender-fun/07-02-2022-pathway-to-somewhere-03.jpg" loading="lazy">
+      </details>
+
+      <details>
+        <summary>Unsuspected Company</summary>
+        <img src="https://perbyhring.github.io/blender-fun/02-07-unsuspected-company.jpg" loading="lazy">
+      </details>
+
     </article>
 
     <footer>
       <strong>Find me:</strong>
       <a href="https://twitter.com/perbyhring">@twitter</a> | 
       <a href="https://soundcloud.com/perbyhring">@soundcloud</a> | 
-      <a href="https://github.com/perbyhring">@github</a>
+      <a href="https://github.com/perbyhring">@github</a> | 
+      <a href="https://codepen.io/perbyhring">@codepen</a>
     </footer>
 
   </main>
