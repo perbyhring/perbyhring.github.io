@@ -11,9 +11,11 @@
       line-height:1.6;
       display:grid;
       justify-items:center;
+      font-size:18px;
+      padding:16px;
     }
     main {
-      max-width:800px;
+      max-width:1024px;
     }
     li {
       margin-bottom:2ex;
@@ -27,7 +29,7 @@
       color:inherit!important;
     }
     time {
-      font-size:12px;
+      font-size:16px;
       font-weight:400;
       display:inline-block;
       color:#999;
@@ -48,7 +50,14 @@
     footer {
       margin-top:5ex;
       padding-top:2ex;
-      border-top:1px solid #ddd;
+    }
+
+    h2 {
+      margin-top:72px;
+      border-bottom:1px solid #ccc;
+    }
+    h3 {
+      margin-top:48px;
     }
 
     .waving-hand {
@@ -82,8 +91,9 @@
       time {
         color:#777;
       }
-      footer {
-        border-top:1px solid #555;
+      h2 {
+        margin-top:72px;
+        border-bottom:1px solid #777;
       }
     }
   </style>
@@ -107,32 +117,50 @@
       
       <h2 id="#three-js">Shaders and real-time 3D</h2>
 
-      <ul>
-        <li>
-          <strong><a href="https://perbyhring.github.io/slug/public/">Slugs // Ημίθεος γυμνοσάλιαγκας</a></strong>
-          <time datetime="2022-01-26 00:00">2022.01.26</time><br>
-          This scene is inspired by a poem about slugs (but not really).
-          The three.js scene is made up of one PlaneGeometry (for the terrain) and one CylinderGeometry (for the slug) – no lights or out of the box materials. Everything is modeled and painted with GLSL vertex and fragment shaders.
-        </li>
-        <li>
-          <strong><a href="https://perbyhring.github.io/instanced-mesh-tunnel/public/">Instanced Mesh Tunnel</a></strong>
-          <time datetime="2021-11-24 00:00">2021.11.24</time><br>
-          A tiny interactive experiment where I wanted to try out how to write InstancedMesh-instances declaratively with my svelte/three-library.
-        </li>
-        <li>
-          <strong><a href="https://perbyhring.github.io/intentional-jellyfish/public/">Intentional Jellyfish</a></strong>
-          <time datetime="2021-10-25 00:00">2021.10.25</time><br>
-          This jellyfish was created from a single IcosahedronGeometry. The top ended up looking a bit more like a mushroom. But that's okay.
-        </li>
-        <li>
-          <strong><a href="https://perbyhring.github.io/unintentional-jellyfish/public/">Unintentional Jellyfish</a></strong>
-          <time datetime="2021-10-21 00:00">2021.10.21</time><br>
-          This was my first go at creating something from scratch after having finished Bruno Simons great chapter on shaders in his <a class="external" href="https://threejs-journey.xyz">Three.js Journey</a>-course. I set out to sculpt a SphereGeometry into a cartoon cloud in the vertex shader. It ended up looking more like a jellyfish, so I doubled down on that.
-        </li>
-      </ul>
+      <h3>
+        <a href="https://perbyhring.github.io/slug/public/">Slugs // Ημίθεος γυμνοσάλιαγκας</a>
+        <time datetime="2022-01-26 00:00">2022.01.26</time>
+      </h3>
+      <p>This scene is inspired by a poem about slugs (but not really).
+      The three.js scene is made up of one PlaneGeometry (for the terrain) and one CylinderGeometry (for the slug) – no lights or out of the box materials. Everything is modeled and painted with GLSL vertex and fragment shaders.</p>
+    
+      
+      <h3>
+        <a href="https://perbyhring.github.io/instanced-mesh-tunnel/public/">Instanced Mesh Tunnel</a>
+        <time datetime="2021-11-24 00:00">2021.11.24</time>
+      </h3>
+      
+      <p>A tiny interactive experiment where I wanted to try out how to write InstancedMesh-instances declaratively with my svelte/three-library.</p>
+      
+
+      <h3>
+        <a href="https://perbyhring.github.io/intentional-jellyfish/public/">Intentional Jellyfish</a>
+        <time datetime="2021-10-25 00:00">2021.10.25</time>
+      </h3>
+      
+      <p>This jellyfish was created from a single IcosahedronGeometry. The top ended up looking a bit more like a mushroom. But that's okay.</p>
+    
+      
+      <h3>
+        <a href="https://perbyhring.github.io/unintentional-jellyfish/public/">Unintentional Jellyfish</a>
+        <time datetime="2021-10-21 00:00">2021.10.21</time>
+      </h3>
+      
+      <p></p>This was my first go at creating something from scratch after having finished Bruno Simons great chapter on shaders in his <a class="external" href="https://threejs-journey.xyz">Three.js Journey</a>-course. I set out to sculpt a SphereGeometry into a cartoon cloud in the vertex shader. It ended up looking more like a jellyfish, so I doubled down on that.</p>
+      
+      
 
 
       <h2 id="blender-fun">Blender Fun</h2>
+
+
+      <h3>The Outpost <time datetime="2022-02-07 00:00">2022.02.10</time></h3>
+      <p>I made this thing because I wanted to try Blenders particle system. So I watched <a class="external" href="https://www.youtube.com/watch?v=gd9S7Ln0vB4">this quick tutorial</a> and felt inspired to create a snowy landscape. I probably went a bit over board with the particles. But hey, that's how I learn. First go crazy and then – once you're done being overly excited about learning a new skill – tone it down and use it sensibly. The robot-model is from <a class="external" href="https://quaternius.com/">Quaternius</a>.</p>
+
+      <details>
+        <summary>The Outpost</summary>
+        <video src="blender-fun/2022-02-10-the-outpost.mp4" preload autoplay muted loop />
+      </details>
 
       
       <h3>Pathway To Somewhere / Unsuspected Company <time datetime="2022-02-07 00:00">2022.02.07</time></h3>
