@@ -96,6 +96,26 @@
         border-bottom:1px solid #777;
       }
     }
+
+    details[open] {
+      position:relative;
+      left:50%;
+      margin-left:-50vw;
+      width:100vw;
+    }
+    details[open] > summary {
+
+      transform:translateX(calc(50vw - 50%));
+      max-width:1024px;
+      padding:0 24px;
+    }
+    details[open] > img,
+    details[open] > video {
+      position:relative;
+      transform:translateX(calc(50vw - 50%));
+      width:100vw;
+      max-width: 1280px;
+    }
   </style>
 </head>
 <body>
@@ -111,11 +131,11 @@
 
       <h2>Content ↴</h2>
       <ul>
-        <li><a href="#three-js">#Shaders and real-time 3D</a></li>
-        <li><a href="#blender-fun">#Blender Fun</a></li>
+        <li><a href="#three-js-fun">Fun With Shaders And Real-Time 3D</a></li>
+        <li><a href="#blender-fun">Blender Fun</a></li>
       </ul>
       
-      <h2 id="three-js">Shaders and real-time 3D</h2>
+      <h2 id="three-js"># Fun With Shaders And Real-Time 3D</h2>
 
       <h3>
         <a href="https://perbyhring.github.io/slug/public/">Slugs // Ημίθεος γυμνοσάλιαγκας</a>
@@ -151,15 +171,15 @@
       
 
 
-      <h2 id="blender-fun">Blender Fun</h2>
+      <h2 id="blender-fun"># Blender Fun</h2>
 
 
       <h3>The Outpost <time datetime="2022-02-07 00:00">2022.02.10</time></h3>
       <p>I made this thing because I wanted to try Blenders particle system. So I watched <a class="external" href="https://www.youtube.com/watch?v=gd9S7Ln0vB4">this quick tutorial</a> and felt inspired to create a snowy landscape. I probably went a bit over board with the particles. But hey, that's how I learn. First go crazy and then – once you're done being overly excited about learning a new skill – tone it down and use it sensibly. The robot-model is from <a class="external" href="https://quaternius.com/">Quaternius</a>.</p>
 
       <details>
-        <summary>The Outpost</summary>
-        <video src="blender-fun/2022-02-10-the-outpost.mp4" preload autoplay muted loop />
+        <summary>The Outpost 🎥</summary>
+        <video src="https://perbyhring.github.io/blender-fun/blender-fun/2022-02-10-the-outpost.mp4" poster="https://perbyhring.github.io/blender-fun/blender-fun/2022-02-10-the-outpost_poster.jpg" preload controls muted loop />
       </details>
 
       
@@ -167,12 +187,12 @@
       <p>I spent a couple of hours organizing all my asset packs into the new Asset Browser in Blender 3.0. Which felt like, but really wasn't, a dumb thing to do. I found it to improve my work flow immensely. These two images was created from throwing assets together and going "hummm.. haaah.. yes... no.. hummm.. yes" until I liked what I was seeing.</p>
 
       <details>
-        <summary>Pathway To Somewhere</summary>
+        <summary>Pathway To Somewhere 📷</summary>
         <img src="https://perbyhring.github.io/blender-fun/07-02-2022-pathway-to-somewhere-03.jpg" loading="lazy">
       </details>
 
       <details>
-        <summary>Unsuspected Company</summary>
+        <summary>Unsuspected Company 📷</summary>
         <img src="https://perbyhring.github.io/blender-fun/02-07-unsuspected-company.jpg" loading="lazy">
       </details>
 
