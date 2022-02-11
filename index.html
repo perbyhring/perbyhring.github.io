@@ -21,12 +21,7 @@
       margin-bottom:2ex;
     }
     a {
-      background:rgb(255, 225, 0);
       color:#000!important;
-    }
-    a.external {
-      background:none;
-      color:inherit!important;
     }
     time {
       font-size:16px;
@@ -95,6 +90,9 @@
         margin-top:72px;
         border-bottom:1px solid #777;
       }
+      a {
+        color:#fff!important;
+      }
     }
 
     details[open] {
@@ -116,6 +114,7 @@
       width:100vw;
       max-width: 1280px;
     }
+    
   </style>
 </head>
 <body>
@@ -127,7 +126,7 @@
     </header>
 
     <article>
-      <p>My name is Per Byhring. This is a page where I publish some things I make for fun.</p>
+      <p>My name is Per Byhring. <br>This a place where I publish some things I make for fun and to learn new stuff.</p>
 
       <h2>Content ↴</h2>
       <ul>
@@ -135,7 +134,7 @@
         <li><a href="#blender-fun">Blender Fun</a></li>
       </ul>
       
-      <h2 id="three-js"># Fun With Shaders And Real-Time 3D</h2>
+      <h2 id="three-js-fun"># Fun With Shaders And Real-Time 3D</h2>
 
       <h3>
         <a href="https://perbyhring.github.io/slug/public/">Slugs // Ημίθεος γυμνοσάλιαγκας</a>
@@ -143,7 +142,6 @@
       </h3>
       <p>This scene is inspired by a poem about slugs (but not really).
       The three.js scene is made up of one PlaneGeometry (for the terrain) and one CylinderGeometry (for the slug) – no lights or out of the box materials. Everything is modeled and painted with GLSL vertex and fragment shaders.</p>
-    
       
       <h3>
         <a href="https://perbyhring.github.io/instanced-mesh-tunnel/public/">Instanced Mesh Tunnel</a>
@@ -166,7 +164,7 @@
         <time datetime="2021-10-21 00:00">2021.10.21</time>
       </h3>
       
-      <p></p>This was my first go at creating something from scratch after having finished Bruno Simons great chapter on shaders in his <a class="external" href="https://threejs-journey.xyz">Three.js Journey</a>-course. I set out to sculpt a SphereGeometry into a cartoon cloud in the vertex shader. It ended up looking more like a jellyfish, so I doubled down on that.</p>
+      <p></p>This was my first go at creating something from scratch after having finished Bruno Simons great chapter on shaders in his <a href="https://threejs-journey.xyz">Three.js Journey</a>-course. I set out to sculpt a SphereGeometry into a cartoon cloud in the vertex shader. It ended up looking more like a jellyfish, so I doubled down on that.</p>
       
       
 
@@ -175,11 +173,11 @@
 
 
       <h3>The Outpost <time datetime="2022-02-07 00:00">2022.02.10</time></h3>
-      <p>I made this thing because I wanted to try Blenders particle system. So I watched <a class="external" href="https://www.youtube.com/watch?v=gd9S7Ln0vB4">this quick tutorial</a> and felt inspired to create a snowy landscape. I probably went a bit over board with the particles. But hey, that's how I learn. First go crazy and then – once you're done being overly excited about learning a new skill – tone it down and use it sensibly. The robot-model is from <a class="external" href="https://quaternius.com/">Quaternius</a>.</p>
+      <p>I made this thing because I wanted to try Blenders particle system. So I watched <a href="https://www.youtube.com/watch?v=gd9S7Ln0vB4">this quick tutorial</a> and felt inspired to create a snowy landscape. I probably went a bit over board with the particles. But hey, that's how I learn. First go crazy and then – once you're done being overly excited about learning a new skill – tone it down and use it sensibly. The robot-model is from <a href="https://quaternius.com/">Quaternius</a>.</p>
 
       <details>
         <summary>The Outpost 🎥</summary>
-        <video src="https://perbyhring.github.io/blender-fun/blender-fun/2022-02-10-the-outpost.mp4" poster="https://perbyhring.github.io/blender-fun/blender-fun/2022-02-10-the-outpost_poster.jpg" preload controls muted loop />
+        <video src="https://perbyhring.github.io/blender-fun/2022-02-10-the-outpost.mp4" poster="https://perbyhring.github.io/blender-fun/2022-02-10-the-outpost_poster.jpg" preload controls muted loop />
       </details>
 
       
