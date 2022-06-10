@@ -7,6 +7,8 @@
 	<Three.Scene>
 		<Three.PerspectiveCamera position-z=4 />
 
+		<Three.Color set="#000" attach="background" />
+
 		<Three.Fog attach="fog" near={DEPTH * .9} far={DEPTH} color="black" />
 
 		<Three.PointLight power=400 decay=2 onTick:position-lerp={[lightPosition, .1]}>
